@@ -40,7 +40,7 @@ const Help = () => {
 
   return (
     <div className="">
-      <div className="bg-[#68AC5D] p-9 content-center">
+      <div className="bg-indigo-500 p-9 content-center">
         <h1 className="font-bold text-5xl text-center text-white m-8">
           How can we Help?
         </h1>
@@ -74,7 +74,8 @@ const Help = () => {
       <div className="w-100">
         <div className="p-9 flex w-screen">
           <h1 className="text-xl mr-5 font-semibold">Still need help?</h1>
-          <button className="px-6 py-1 rounded-lg ml-auto text-white text-xl font-semibold hover:bg-green-700 bg-[#68AC5D]">
+          <button
+            className="px-6 py-1 rounded-lg ml-auto text-white text-xl font-semibold hover:bg-black bg-indigo-500">
             Contact Us
           </button>
         </div>

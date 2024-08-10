@@ -16,7 +16,7 @@ import SupportEngine from "./components/ChatSupport/SupportEngine/index";
 import Cookies from "js-cookie";
 
 //Pages
-import Register from "./pages/Register";
+import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import Help from "./pages/Help";
 import Header from "./components/header/Header";
@@ -72,20 +72,18 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="max-w-screen max-h-screen overflow-x-hidden">
       {/*       
       <p id="transcript">Transcript: {transcript}</p>
-
       <button onClick={SpeechRecognition.startListening}>Start</button> */}
-      <PreHeader />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="register" element={<Register />} />
+        <Route path="/register" element={<Register/>} />
         <Route path="verify-otp" element={<VerifyOTP />} />
         <Route path="help" element={<Help />} />
-        <Route path="Dashboard" element={<Dashboard />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
         <Route path="addProduct" element={<AddProduct />} />
         <Route path="update-profile" element={<UpdateProfile />} />
         <Route path="product/:id" element={<Product />} />
@@ -98,13 +96,13 @@ function App() {
         <Route path="support" element={<SupportAdmin />} />
         <Route path="policy" element={<CancellationPolicy />} />
         <Route path="equipment-report/:id" element={<EquipmentReport />} />
-        <Route path="feedback" element={<Feedback />} />
+        <Route path="/feedback" element={<Feedback />} />
         <Route path="*" element={<div>Not Found</div>} />
       </Routes>
 
       <Footer />
       <SupportEngine />
-    </>
+    </div>
   );
 }
 

@@ -421,33 +421,30 @@ const Dashboard = () => {
                         <h1 className='text-2xl font-bold text-gray-600 text-right'>Search Equipments</h1>
                         <div className=''>
                             <div className="input-group relative flex items-center w-full mb-4">
-                                <i onClick={SpeechRecognition.startListening} className="text-darkgreen tooltip cursor-pointer text-2xl mr-5 fa-solid fa-microphone"><span className="tooltiptext">Search by Voice</span></i>
-
-                                    <input onChange={(e) => handleFilter(e)} value={searchInput} type="search" className="searchInput form-control relative flex-auto min-w-0 block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Enter your Equipment here......" aria-label="Search" aria-describedby="button-addon3" />
-                                    <button className="searchBtn btn inline-block px-6 py-2 text-green-600 font-medium text-sm leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 cursor-pointer focus:outline-none focus:ring-0 transition duration-150 ease-in-out" type="button" id="button-addon3">Search</button>
+                                <i onClick={SpeechRecognition.startListening} className="text-indigo-500 tooltip cursor-pointer text-2xl mr-5 fa-solid fa-microphone"><span className="tooltiptext">Search by Voice</span></i>
+                                <input onChange={(e) => handleFilter(e)} value={searchInput} type="search" className="searchInput form-control relative flex-auto min-w-0 block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" placeholder="Enter your Equipment here......" aria-label="Search" aria-describedby="button-addon3" />
+                                <button className="px-4 py-1 bg-indigo-500 rounded-md text-white hover:bg-black" type="button" id="button-addon3">Search</button>
                                     
                             </div>
                         </div>
                     </div>
                     <div className='flex mb-10 justify-around'>
-                        <div className="flex w-[240px] h-[40px] items-center border-2 rounded-lg border-[#68AC5D] px-1">
-                            <i className="text-[#68AC5D] pl-4 pr-2 fa-solid fa-location-dot"></i>
+                        <div className="flex w-[240px] h-[40px] items-center border-2 rounded-lg border-indigo-500 px-1">
+                            <i className="text-indigo-500 pl-4 pr-2 fa-solid fa-location-dot"></i>
                             <input className="searchDash appearance-none bg-transparent w-full text-gray-800 font-semibold mr-1 py-0.5 px-1 leading-tight focus:outline-none" type="text" placeholder="Enter Pincode (eg 201301)" aria-label="Full name" />
                         </div>
                         <h1 className='mt-3 mb-3 text-md font-semibold text-gray-500 text-center'>Search your desired Equipments directly by entering a keyword or the whole name.</h1>
                     </div>
-
                     <div className='flex justify-around w-full'>
                         <div className='w-1/4'>
-                            <div className='bg-[#68AC5D] py-4 px-1 prFilter'>
+                            <div className='bg-indigo-500 py-4 px-1 prFilter'>
                                 <h1 className='text-lg font-bold text-center text-white'>Product Filters</h1>
-                                
                             </div>
                             
 
                             <div className='border py-6'>
-                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-[#68AC5D] pb-1 ml-6'>Categories:</span>
-
+                                {/* CATEGORIES */}
+                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-indigo-500 pb-1 ml-6'>Categories:</span>
                                 <div className='my-5'>
                                     {
                                         equipList?.map(list => (
@@ -456,16 +453,16 @@ const Dashboard = () => {
                                     }
                                 </div>
 
-                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-[#68AC5D] pb-1 ml-6'>Brands</span>
-
+                                {/* BRAND */}
+                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-indigo-500 pb-1 ml-6'>Brands</span>
                                 <div className='my-5'>
                                     <Dropdown title="Mahindra" />
                                     <Dropdown title="John Deere" />
                                     <Dropdown title="CLAAS India" />
                                 </div>
 
-                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-[#68AC5D] pb-1 ml-6'>Price Range</span>
-
+                                {/* PRICE RANGE */}
+                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-indigo-500 pb-1 ml-6'>Price Range</span>
                                 <div className='my-5'>
                                     <p className='text-md font-semibold text-[#4F4F4F] pl-8'>Price per day</p>
                                     <input type="range" id="perDay" min={0} max={149827} onChange={(e) => {setPerDay(e.target.value); setChange(!change)}} value={perDay}
@@ -486,15 +483,15 @@ const Dashboard = () => {
                                     <p className='text-md font-normal text-[#4F4F4F] pl-8'>0 KM to {distance} KM</p>
                                 </div>
 
-                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-[#68AC5D] pb-1 ml-6'>Availability Date</span>
+                                <span className='text-lg mb-4 font-semibold text-[#4F4F4F] border-b-2 border-indigo-500 pb-1 ml-6'>Availability Date</span>
 
                                 <p className='text-md pt-2 font-normal text-[#4F4F4F] pl-6'>From</p>
 
                                 <div className='flex justify-center items-center'>
-                                    <button onClick={() => setVisible1(!visible1)} className="bg-darkgreen hover:bg-green-700 text-white font-normal text-sm py-1 text-center w-1/2 my-4 px-2 rounded">
+                                    <button onClick={() => setVisible1(!visible1)} className="bg-indigo-500 text-white font-normal text-sm py-1 text-center w-1/2 my-4 px-2 rounded">
                                         DD-MM-YYYY
                                     </button>
-                                    <i className="ml-4 text-lg text-[#68AC5D] fa-solid fa-calendar"></i>
+                                    <i className="ml-4 text-lg text-indigo-500 fa-solid fa-calendar"></i>
                                 </div>
                                 <div style={{ display: visible1 ? 'block' : 'none', height: '400px', width: '200px', 'zIndex': 1 }}>
                                     <DateRangePicker style={{ height: '300px', width: '280px' }}
@@ -510,10 +507,10 @@ const Dashboard = () => {
 
                                 <p className='text-md font-normal text-[#4F4F4F] pl-6'>To</p>
                                 <div className='flex justify-center items-center'>
-                                    <button onClick={() => setVisible2(!visible2)} className="bg-darkgreen hover:bg-green-700 text-white font-normal text-sm py-1 text-center w-1/2 my-4 px-2 rounded">
+                                    <button onClick={() => setVisible2(!visible2)} className="bg-indigo-500 text-white font-normal text-sm py-1 text-center w-1/2 my-4 px-2 rounded">
                                         DD-MM-YYYY
                                     </button>
-                                    <i className="ml-4 text-lg text-[#68AC5D] fa-solid fa-calendar"></i>
+                                    <i className="ml-4 text-lg text-indigo-500 fa-solid fa-calendar"></i>
                                 </div>
                                 <div style={{ display: visible2 ? 'block' : 'none', height: '400px', width: '200px', 'zIndex': 1 }}>
                                     <DateRangePicker style={{ height: '300px', width: '280px' }}

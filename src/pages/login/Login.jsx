@@ -6,7 +6,7 @@ import Cookies from "js-cookie";
 import { getLoginAction, getSaveProfileAction, getSaveTokenAction } from "../../redux/actions";
 import cross_black from "../../img/cross_black.svg";
 import Loader from "../../components/loader";
-import logo from "../../img/logo.png";
+import logo from "../../img/logo.svg";
 import InputField from "../../components/input/InputField";
 import { ErrorMsg, SuccessMsg } from "../../components/alerts";
 
@@ -125,9 +125,9 @@ const Login = ({ onClick = () => {} }) => { // Default function to prevent issue
         <div className="h-screen flex justify-center align-center p-12">
           <div className="rounded-2xl bg-white w-1/3 h-auto p-9 ">
             <form onSubmit={verify} className="flex flex-col relative">
-              <div className="absolute  -top-16 rounded-lg float-center flex flex-col left-1/2 -translate-x-1/2">
+              <div className="absolute -top-16 rounded-lg float-center flex flex-col left-1/2 -translate-x-1/2">
                 <img
-                  className="h-24 w-24 border-full mx-auto"
+                  className="h-16 w-40 rounded-xl mx-auto"
                   style={{
                     filter: "drop-shadow(0px 4px 4px rgba(104, 172, 93, 0.25))"
                   }}
@@ -190,7 +190,7 @@ const Login = ({ onClick = () => {} }) => { // Default function to prevent issue
             >
               <div className="absolute rounded-full -top-12 float-center flex flex-col left-1/2 -translate-x-1/2">
                 <img
-                  className="h-24 w-24 border-full mx-auto"
+                  className="h-16 w-40 rounded-xl mx-auto"
                   style={{
                     filter: "drop-shadow(0px 4px 4px rgba(104, 172, 93, 0.25))"
                   }}

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Support.css";
-import vector11 from "../../../img/vector11.svg";
-import vector22 from "../../../img/vector22.svg";
-import vector33 from "../../../img/vector33.svg";
+import { RiCustomerServiceFill } from "react-icons/ri";
+import { FaHandshake } from "react-icons/fa6";
+import { GoCheckCircleFill } from "react-icons/go";
 
 const Support = () => {
   return (
@@ -11,11 +11,11 @@ const Support = () => {
         What we offer
       </h1>
       <p className="text-lg text-center mb-[100px] mt-3 opacity-90">
-        Being a part of Krishi Sadhan, this is what you get from us:
+        Being a part of FarmeaZy, this is what you get from us:
       </p>
       <div className="flex justify-center mediaQuery items-center mb-[100px]">
-        <div className="supportItem mx-5 getMargin p-9 rounded-2xl">
-          <img className="supportImg" src={vector11} alt="" />
+        <div className="supportItem mx-5 getMargin p-9 rounded-2xl flex flex-col justify-center items-center">
+          <RiCustomerServiceFill className="text-7xl text-indigo-500"/>
           <h3 className="text-xl mb-1 text-center font-semibold mt-5">
             24*7 customer support
           </h3>
@@ -23,8 +23,8 @@ const Support = () => {
             We’re just one call away.
           </p>
         </div>
-        <div className="supportItem mx-5 getMargin p-9 rounded-2xl">
-          <img className="supportImg" src={vector22} alt="" />
+        <div className="supportItem mx-5 getMargin p-9 rounded-2xl flex flex-col justify-center items-center">
+          <FaHandshake className="text-7xl text-indigo-500"/>
           <h3 className="text-xl mb-1 text-center font-semibold mt-5">
             Trusted Sellers/Buyers
           </h3>
@@ -32,8 +32,8 @@ const Support = () => {
             Ensured safety of your experience.
           </p>
         </div>
-        <div className="supportItem mx-5 getMargin p-9 rounded-2xl">
-          <img className="supportImg" src={vector33} alt="" />
+        <div className="supportItem mx-5 getMargin p-9 rounded-2xl flex flex-col justify-center items-center">
+          <GoCheckCircleFill className="text-7xl text-indigo-500"/>
           <h3 className="text-xl mb-1 text-center font-semibold mt-5">
             One-click Booking
           </h3>

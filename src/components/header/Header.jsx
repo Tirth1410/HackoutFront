@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import logo from "../../img/logo.png";
+import logo from "../../img/logo.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { getLogoutAction } from "../../redux/actions";
 import Cookies from "js-cookie";
-
-import Login from "../../pages/Login";
-import Register from "../../pages/Register";
 
 //images
 import userIcon from "../../img/user_icon.svg";
@@ -23,20 +20,17 @@ const Header = () => {
   const [showRegister, setShowRegister] = useState(false);
 
   return (
-    <div className="h-16 inPhone bg-white shadow-lg">
-      <div className="flex content-center">
-        <div className="flex items-center cursor-pointer ml-auto lg:ml-32">
+    <div className="w-full max-h-16 inPhone bg-white shadow-lg px-5">
+      <div className="flex justify-between">
+        <div className="flex items-center cursor-pointer">
           <img
             onClick={() => navigate("/")}
             src={logo}
-            className="logoWeb"
+            className="h-16 rounded-xl py-1"
             alt=""
           />
-          <h3 className="text-md font-bold opacity-[.70]">
-            FarmEazy
-          </h3>
         </div>
-        <div className="flex-2 w-5/12 mx-auto">
+        <div className="flex-2 w-5/12 mx-aut">
           <ul className="flex mt-4 items-around">
             <li
               onClick={() => navigate("/")}
@@ -67,13 +61,17 @@ const Header = () => {
         {!Cookies.get("refresh-token") ? (
           <div className="flex items-center">
             <button
-              onClick={() => setShowLogin(true)}
+              onClick={() => {
+                navigate("/login");
+              }}
               className="border-2 rounded-lg border-indigo-500 text-white hover:text-white hover:border-black transition bg-indigo-500 hover:bg-black font-bold py-1 px-8 mx-2"
             >
               Login
             </button>
             <button
-              onClick={() => setShowRegister(true)}
+              onClick={() => {
+                navigate("/register");
+              }}
               className="border-2 rounded-lg border-indigo-500 text-white hover:text-white hover:border-black transition bg-indigo-500 hover:bg-black font-bold py-1 px-8 mx-2"
             >
               Sign Up
@@ -125,14 +123,6 @@ const Header = () => {
           </div>
         )}
       </div>
-      {showLogin ? (
-        <div className="">
-          <Login onClick={setShowLogin} />
-        </div>
-      ) : (
-        <div></div>
-      )}
-      {showRegister ? <Register onClick={setShowRegister} /> : <div></div>}
     </div>
   );
 };

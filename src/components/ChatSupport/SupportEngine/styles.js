@@ -1,4 +1,4 @@
-import logo from '../../../img/logo.png';
+import logo from '../../../img/logo.svg';
 export const styles = {
     chatWithMeButton: {
         cursor: 'pointer',
@@ -26,7 +26,7 @@ export const styles = {
         padding: '12px 12px 12px 16px',
         borderRadius: '24px', 
         // Color
-        backgroundColor: '#68AC5D',
+        backgroundColor: '#6616F1',
         color: 'black',
     },
     supportWindow: {
@@ -42,7 +42,7 @@ export const styles = {
         backgroundColor: 'white',
         // Border
         borderRadius: '12px',
-        border: `2px solid #68AC5D`,
+        border: `2px solid #6616F1`,
         overflow: 'hidden',
         // Shadow
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
@@ -76,7 +76,7 @@ export const styles = {
         outline: 'none',
         padding: '12px',
         borderRadius: '12px',
-        border: '2px solid #68AC5D',
+        border: '2px solid #6616F1',
     },
     bottomText: { 
         position: 'absolute', 

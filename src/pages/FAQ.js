@@ -26,8 +26,7 @@ const FAQ = () => {
                   </summary>
 
                   <span className="text-justify">
-                    You can sell your Farm Equipment by listing it on Krishi
-                    Sadhan website or Krishi Sadhan mobile applications.
+                    You can sell your Farm Equipment by listing it on FarmeaZy website.
                   </span>
                 </details>
                 <details class="mb-4">
@@ -36,7 +35,7 @@ const FAQ = () => {
                   </summary>
 
                   <span className="text-justify">
-                    Listing on Krishi Sadhan is quite easy. Just click on the
+                    Listing on FarmeaZy is quite easy. Just click on the
                     button LIST YOUR EQUIPMENT on the top right corner of the
                     website. Choose equipment type and location and click “List
                     Now”. Fill in the details of the equipment and click on the
@@ -50,7 +49,7 @@ const FAQ = () => {
 
                   <span className="text-justify">
                     You can sell your new or used tractor by listing it on
-                    Krishi Sadhan website or mobile applications. Don’t forget
+                    FarmeaZy website. Don’t forget
                     to mark it as new or used while creating equipment listing.
                   </span>
                 </details>
@@ -63,7 +62,7 @@ const FAQ = () => {
 
                   <span class="px-4 py-2 text-justify">
                     Yes there is an option to buy equipment as well. Some
-                    providers are open to selling equipment on Krishi Sadhan
+                    providers are open to selling equipment on FarmeaZy
                     with a fair deal.
                   </span>
                 </details>
@@ -73,7 +72,7 @@ const FAQ = () => {
                   </summary>
 
                   <span class="px-4 py-2 text-justify">
-                    You don't need a website to start selling on Krishi Sadhan.
+                    You don't need a website to start selling on FarmeaZy.
                     Once you complete registration, you will have access to your
                     account where you can manage your equipment listing.
                   </span>

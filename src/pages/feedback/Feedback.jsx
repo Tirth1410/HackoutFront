@@ -35,7 +35,7 @@ const Feedback = () => {
 
     return (
         <div>
-            <div class="flex items-center justify-center bg-gray-50 py-6 px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
             <div class="max-w-md w-full space-y-6">
                 <div>
                     <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
@@ -43,7 +43,7 @@ const Feedback = () => {
                     </h2>
                 </div>
 
-                <div class="rounded bg-white max-w-md overflow-hidden shadow-xl p-5">
+                <div class="rounded bg-gray-100 max-w-md overflow-hidden shadow-xl p-5">
 
                     <form class="space-y-4" onSubmit={handleSubmit} method="POST">
                         <input type="hidden" name="remember" value="True" />
