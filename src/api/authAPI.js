@@ -2,7 +2,7 @@ import axios from "axios";
 import instance from "./config";
 import Cookies from "js-cookie";
 
-// const url = "https://krishi-sadhan-app.herokuapp.com";
+// const url = "https://localhost:8000";
 const url = "http://127.0.0.1:8000";
 
 export const postRegisterData = async ({

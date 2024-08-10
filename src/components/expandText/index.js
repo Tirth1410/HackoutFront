@@ -42,7 +42,7 @@ const ExpandDropdown = ({ heading, content }) => {
             onClick={() => setOpen(false)}
           >
             <span className="text-indigo font-thin text-xl">{content}</span>
-            <div className="rounded-full border border border-indigo w-7 h-7 flex items-center justify-center bg-indigo">
+            <div className="rounded-full  border-indigo w-7 h-7 flex items-center justify-center bg-indigo">
               <svg
                 ariaHidden="true"
                 data-reactid="281"

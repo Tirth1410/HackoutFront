@@ -20,7 +20,7 @@ const Footer = () => {
             <img src={logo} className="footerLogo" alt="" />
             <div className="ml-4">
               <h3 className="text-2xl text-white font-bold mt-4">
-                Krishi <br /> Sadhan
+                FarmeaZy <br />
               </h3>
               <p className="text-md font-normal text-white mt-2">
                 Kisaan upkaran ka ek Matra Sadhan.
@@ -80,28 +80,12 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex-1 px-16 border-r-2 border-black-600">
-          <h1 className="text-xl ml-6 text-white font-bold w-2/3">
-            Give us a follow on social media
-          </h1>
+         
           <div className="flex my-5 justify-left">
-            <img
-              className="socialIcons mx-3 ml-6 cursor-pointer"
-              src={Vector}
-              alt=""
-            />
-            <img
-              className="socialIcons mx-3 ml-6 cursor-pointer"
-              src={Vector1}
-              alt=""
-            />
-            <img
-              className="socialIcons mx-3 ml-6 cursor-pointer"
-              src={Vector2}
-              alt=""
-            />
+            
           </div>
           <p className="text-lg ml-6 text-white">
-            Made by : <strong>Team Gryffindor</strong>
+            Made by : <strong>Team Console Crashers</strong>
           </p>
         </div>
         <div className="flex-1 flex mr-6">

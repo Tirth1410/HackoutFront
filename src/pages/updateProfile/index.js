@@ -33,7 +33,7 @@ const Profile = () => {
           </p>
 
           <div className="h-full">
-            <div className="border-b-2 block md:bg-[#68ac5d] flex">
+            <div className="border-b-2 block md:bg-[#68ac5d]">
               <div className="w-full md:w-2/5 p-4 sm:p-6 lg:p-8 bg-white shadow-md">
                 <div className="flex justify-between">
                   <span className="text-xl font-semibold block">

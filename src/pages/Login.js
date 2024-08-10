@@ -141,7 +141,7 @@ const Login = ({ onClick = () => {} }) => { // Default function to prevent issue
         <div
             className={`transition ease-in-out z-40 ${
                 showOTP
-                    ? "inline block opacity-100 -translate-x-0"
+                    ? "inline  opacity-100 -translate-x-0"
                     : "hidden opacity-0 -translate-x-full"
             }`}
         >

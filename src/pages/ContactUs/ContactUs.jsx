@@ -32,7 +32,7 @@ const ContactUs = () => {
                     <h1 className='text-3xl pt-6 text-gray-900 font-bold opacity-[0.9]'>Contact Us</h1>
                     <p className='mt-12 text-gray-800 text-lg font-semibold'>Head Office</p>
                     <p className='mt-3 text-gray-500 text-md font-semibold'>JSSATE, Sector 62, Block C, Noida</p>
-                    <p className='mt-3 text-gray-500 text-md font-semibold'><i className="text-green-400 fa-solid fa-envelope"></i> Email : <a href="" className='text-green-700 font-semibold'>krishisadhan7@gmail.com</a></p>
+                    <p className='mt-3 text-gray-500 text-md font-semibold'><i className="text-green-400 fa-solid fa-envelope"></i> Email : <a href="" className='text-green-700 font-semibold'>FarmeaZy@gmail.com</a></p>
                 </div>
 
                 <div className='flex-1'>

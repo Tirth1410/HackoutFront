@@ -7,7 +7,7 @@ const Workflow = () => {
   return (
     <div className=" mb-10 p-12 bg-[#219653] ">
       <h1 className="text-4xl font-bold uppercase mb-4 text-center">
-        How KRISHI SADHAN works?
+        How FarmeaZy works?
       </h1>
       <p className="text-md font-medium uppercase mb-4 text-white text-center">
         Take a Look at out Platform Demo

@@ -33,7 +33,7 @@ const Header = () => {
             alt=""
           />
           <h3 className="text-md font-bold opacity-[.70]">
-            Krishi <br /> Sadhan
+            FarmeaZy <br />
           </h3>
         </div>
         <div className="flex-2 w-5/12 mx-auto">

@@ -36,7 +36,7 @@ const BookingRequest = () => {
     //             "Content-Type": "application/json",
     //             Authorization: `Bearer ${Cookies.get('access-token')}`
     //         };
-    //         const {data} =  await axios.get(`https://krishi-sadhan-app.herokuapp.com/api/booking/detail/${params.id}` , { headers });
+    //         const {data} =  await axios.get(`https://localhost:8000/api/booking/update/${id}//api/booking/detail/${params.id}` , { headers });
     //         console.log(data);
     //         setOutput(data);
     //     }
@@ -51,7 +51,7 @@ const BookingRequest = () => {
             "Content-Type": "application/json",
             Authorization: `Bearer ${Cookies.get('access-token')}`
         };
-        await axios.patch(`https://krishi-sadhan-app.herokuapp.com/api/booking/update/${id}/` , { status }, { headers });
+        await axios.patch(`http://localhost:8000/api/booking/update/${id}/` , { status }, { headers });
         alert('Booking has been confirmed');
     }
     

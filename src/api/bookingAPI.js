@@ -87,7 +87,7 @@ export const BookingUpdate = async (status, id) => {
           "Content-Type": "application/json",
           Authorization: `"Bearer ${Cookies.get('access-token')}`
       };
-      return await axios.patch(`https://krishi-sadhan-app.herokuapp.com/api/booking/update/${id}/` , { status }, { headers });
+      return await axios.patch(`https://localhost:8000/api/booking/update/${id}/` , { status }, { headers });
   } catch(error) {
       console.log('Error while calling getBookingDetail API', error);
   }
