@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'evergreen': '#D8F5DE',
-        'darkgreen': '#68AC5D'
+        'evergreen': '#ffffff',
+        'darkgreen': '#ffffff',
       },
     },
   },

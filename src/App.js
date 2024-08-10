@@ -17,7 +17,7 @@ import Cookies from "js-cookie";
 
 //Pages
 import Register from "./pages/Register";
-import Login from "./pages/Login";
+import Login from "./pages/login/Login";
 import Help from "./pages/Help";
 import Header from "./components/header/Header";
 import FAQ from "./pages/FAQ";
@@ -81,7 +81,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="verify-otp" element={<VerifyOTP />} />
         <Route path="help" element={<Help />} />
