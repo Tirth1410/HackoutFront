@@ -18,12 +18,11 @@
 - **Frontend**: React, Redux
 - **Backend**: Django Rest Framework
 - **IDE**: VS Code
-- **Design**: Figma, Canva
 - **API Testing & Documentation**: Postman, Swagger
 - **Version Control**: Git and GitHub
 - **Machine Learning**: Python, Jupyter Notebook
 - **Database**: PostgreSQL
-- **Hosting**: Heroku, Netlify
+- **Hosting**: vercel
 
 
 ### Frontend Setup Instructions
