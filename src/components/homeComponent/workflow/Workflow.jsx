@@ -1,7 +1,7 @@
 import React from "react";
 import "./Workflow.css";
 // import Rectangle73 from "../../../img/Rectangle73.png";
-import videoPic from "../../../img/videoPic.png";
+import videoPic from "../../../img/ss.jpg";
 
 const Workflow = () => {
   return (
