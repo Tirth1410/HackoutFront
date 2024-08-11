@@ -83,7 +83,7 @@ const AddProduct = () => {
   return (
       <div>
         <div className="my-10 max-w-6xl mx-auto">
-          <div className="border-l-2 border-green-600 pl-6">
+          <div className="border-l-2 border-purple-500 pl-6">
             <h1 className="text-2xl font-semibold text-gray-700">
               Describe Your Equipment
             </h1>

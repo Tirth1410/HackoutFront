@@ -62,7 +62,7 @@ const ContactUs = () => {
                             {done && (
                                 <h1 style={{color: '#59b256', fontSize: '18px', marginTop: '12px'}}>Thank you, Your email has been sent</h1>
                             )}
-                            <button className="mt-7 ml-auto bg-darkgreen mr-16 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-full">
+                            <button className="px-6 py-1 rounded-lg mx-auto text-white text-xl font-semibold hover:bg-black bg-indigo-500">
                                 Send Message
                             </button>
                             

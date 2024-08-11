@@ -2,8 +2,10 @@ import React from "react";
 
 //Components
 import ExpandDropdown from "../components/expandText";
+import { useNavigate } from "react-router-dom";
 
 const Help = () => {
+  const navigate = useNavigate();
   const booking_help = [
     {
       heading: "Q: How do I book an equipment on Krishi Sadhan",
@@ -75,6 +77,9 @@ const Help = () => {
         <div className="p-9 flex w-screen">
           <h1 className="text-xl mr-5 font-semibold">Still need help?</h1>
           <button
+            onClick={() => {
+              navigate("/contact")
+            }}
             className="px-6 py-1 rounded-lg ml-auto text-white text-xl font-semibold hover:bg-black bg-indigo-500">
             Contact Us
           </button>
